@@ -50,6 +50,8 @@ int main()
             {
                 cout << arr[i] << " ";
             }
+            cout << "\n";
+            size += 1;
             break;
         }
         case 2:
