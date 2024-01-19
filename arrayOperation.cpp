@@ -24,7 +24,7 @@ int main()
  {
  
     int key;
-    cout << "Choose the key for operation \n";
+    cout << "\nChoose the key for operation \n";
     cout << "1 for insertion. \n2 for deletion. \n3 for exit. \n";
     cin >> key;
     
