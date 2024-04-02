@@ -31,7 +31,7 @@ class circularQueue{
         }
         else if(isEmpty())
         {
-            rear = fornt = 0;
+            rear = front = 0;
 
         }
         else{
@@ -48,11 +48,12 @@ class circularQueue{
         }
         else if(front == rear)
         {
-            front -1;
+            front = -1;
             rear = -1;
         }
         else{
-            int removedElement = queue[front++]
+            int removedElement = queue[front];
+            front++;
         }
         cout << "Removed " << endl;
     }
@@ -74,7 +75,7 @@ class circularQueue{
 
     void displayQueue()
     {
-        for(int i = 0; i <= rear; i++ )
+        for(int i = front; i <= rear; i++ )
         {
             cout << queue[i] << " ";
         }
